@@ -14,7 +14,7 @@ services:
     ports:
       - 80:80
     volumes: 
-      - ./nginx/.htpasswd:/etc/nginx/.htpasswd:ro
+      - ./.htpasswd:/etc/nginx/.htpasswd:ro
     depends_on:
       - app
       - mysql
