@@ -7,7 +7,7 @@ services:
   mysql:
     build: ./mysql
     volumes:
-      - todo-mysql-data:/var/lib/mysql
+      - mysql-data:/var/lib/mysql
 
   nginx:
     build: ./nginx
@@ -20,4 +20,4 @@ services:
       - mysql
 
 volumes:
-    todo-mysql-data:
+    mysql-data:
