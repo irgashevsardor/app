@@ -3,3 +3,4 @@
    ```
    sudo htpasswd -c .htpasswd user1
    ```
+2. Rename `.env.example` to `.env` and set your environment variables.
